@@ -216,7 +216,12 @@ def get_claude_token():
 
 def make_anthropic_client(token):
     base_url = GATEWAYS[CLAUDE_GATEWAY]["base_url"]
-    http_client = httpx.Client(
+    # Newer anthropic SDKs require httpx2.Client; older ones require httpx.Client.
+    try:
+        import httpx2 as http_lib
+    except ImportError:
+        http_lib = httpx
+    http_client = http_lib.Client(
         event_hooks={"request": [log_httpx_request], "response": [log_httpx_response]}
     )
     return anthropic.Anthropic(
