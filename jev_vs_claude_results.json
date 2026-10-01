@@ -1,0 +1,571 @@
+{
+  "lots": [
+    {
+      "seller_code": "GFLD",
+      "seller_name": "GEICO - HOME OFFICE",
+      "lot_number": "71243676",
+      "lot_stage": "10",
+      "lot_status": "AWAITING CLEAR FOR PICKUP",
+      "jev_answers": {
+        "escalation_followed": {
+          "type": "noul",
+          "noul": 0.57
+        },
+        "title_handling": {
+          "type": "choice",
+          "choice": "consistent",
+          "probabilities": {
+            "not_applicable": 0.04,
+            "consistent": 0.92,
+            "inconsistent": 0.04
+          },
+          "confidence": 0.88
+        },
+        "communication_compliance": {
+          "type": "choice",
+          "choice": "compliant",
+          "probabilities": {
+            "noncompliant": 0.05,
+            "compliant": 0.74,
+            "partial": 0.21
+          },
+          "confidence": 0.61
+        },
+        "billing_compliance": {
+          "type": "choice",
+          "choice": "not_applicable",
+          "probabilities": {
+            "partial": 0.01,
+            "not_applicable": 0.98,
+            "compliant": 0,
+            "noncompliant": 0.01
+          },
+          "confidence": 0.97
+        },
+        "pickup_dispatch_compliance": {
+          "type": "choice",
+          "choice": "compliant",
+          "probabilities": {
+            "noncompliant": 0.03,
+            "not_applicable": 0.06,
+            "compliant": 0.79,
+            "partial": 0.12
+          },
+          "confidence": 0.72
+        },
+        "overall_compliance_severity": {
+          "type": "score",
+          "score": 0.52,
+          "legend": {
+            "0": "No deviation - fully compliant with every currently-applicable instruction (includes lots where most instructions aren't applicable yet)",
+            "1": "Minor deviation - a currently-applicable instruction was followed loosely, or has a small documentation/verifiability gap, but no real risk",
+            "2": "Major deviation - a currently-applicable instruction was clearly not followed, needs review"
+          },
+          "probabilities": {
+            "0": 0.64,
+            "1": 0.2,
+            "2": 0.16
+          },
+          "confidence": 0.22
+        }
+      },
+      "claude_verdict": "**1. Escalation followed:** Not yet applicable / unclear-but-fine. All notes fall within a single day (2026-09-29, 11:45\u201315:30). The seller's \"Day 2/Day 3 release issue \u2192 GEICO.SUPPORT@COPART.COM\" escalation threshold has not been reached \u2014 release issues here were opened and closed same-day (A544\u2192A546 unable-to-contact cycle at 11:55\u201313:28, then a verbal-release issue opened at 13:28 still active as of the last note at 15:30). No evidence of a stale, multi-day release issue, so no escalation email is expected yet.\n\n**2. Title handling:** Consistent so far. TDAA (11:46:07) correctly flags Title Direct eligibility (\"title did not come from seller\"), followed by TDIR salvage transmittal received/resolved and SVGT \"Other Title Doc\" selection. This aligns with the seller's \"everything on salvage title unless state requires clean\" instruction \u2014 vehicle is being processed on a salvage transmittal with no indication of a clean-title override. State is CA (Vacaville, per XML owner address); notes don't confirm CA's specific title-brand requirement, so full state-law compliance can't be independently verified, but nothing in the notes contradicts the instruction. Lot has not reached stage 40 title-processing proper, so this is early/consistent handling, not a completed check.\n\n**3. Communication compliance:** Compliant. Multiple structured contact attempts are documented: click-to-dial to pickup location (11:54, 12:22, 13:27, 13:44), automated owner text messages (CB14 at 13:28, CB01 at 15:30), adjuster email (A504 at 13:28:27 to CAMICK@GEICO.COM) with seller response logged same session (A536/A522 at 13:29:14\u201315). This matches the \"contact owner/seller directly\" style pattern and shows active, timely follow-up rather than a stalled contact chain.\n\n**4. Billing compliance:** Not applicable. No advance charges, ancillary services, or key-approval events appear in the notes, so the $200/GM/supervisor approval thresholds in the billing notes have no triggering event yet.\n\n**5. Pickup/dispatch compliance:** Compliant so far. The release-issue workflow is being followed correctly per code: A544 (opened, unable to contact) \u2192 A545 (updated) \u2192 A546 (closed, reached shop) \u2192 new A544 (verbal release required) with CB14 text sent to owner, consistent with proper CFR handling. The Houston-yard-specific $40/day storage approval clause is not applicable (no yard/storage-charge data shown, and no indication this is Houston YD11/YD357).\n\n**6. Overall compliance severity: No deviation.** Of the instructions currently applicable at this lot's stage (pre-pickup, early title transmittal) \u2014 contact/communication protocol and initial salvage-title handling \u2014 all are being followed per the visible notes. Escalation-threshold and billing-approval instructions are not yet triggered (single-day timeline, no charges), so they are excluded from severity scoring rather than counted as gaps.",
+      "bucket": "aligned",
+      "bucket_reason": "Jev's dominant probabilities and Claude's textual conclusions match on every dimension, with no meaningful gaps in interpretation.",
+      "dimension_buckets": {
+        "escalation_followed": "aligned",
+        "title_handling": "aligned",
+        "communication_compliance": "aligned",
+        "billing_compliance": "aligned",
+        "pickup_dispatch_compliance": "aligned",
+        "overall_compliance_severity": "aligned"
+      }
+    },
+    {
+      "seller_code": "GVIC",
+      "seller_name": "GEICO - HOME OFFICE",
+      "lot_number": "71017256",
+      "lot_stage": "25",
+      "lot_status": "AWAITING ADVANCE CHECK",
+      "jev_answers": {
+        "escalation_followed": {
+          "type": "noul",
+          "noul": 0.36
+        },
+        "title_handling": {
+          "type": "choice",
+          "choice": "consistent",
+          "probabilities": {
+            "inconsistent": 0.03,
+            "not_applicable": 0.03,
+            "consistent": 0.9400000000000001
+          },
+          "confidence": 0.9
+        },
+        "communication_compliance": {
+          "type": "choice",
+          "choice": "compliant",
+          "probabilities": {
+            "partial": 0.33,
+            "compliant": 0.47000000000000003,
+            "noncompliant": 0.2
+          },
+          "confidence": 0.2
+        },
+        "billing_compliance": {
+          "type": "choice",
+          "choice": "partial",
+          "probabilities": {
+            "partial": 0.62,
+            "not_applicable": 0.04,
+            "compliant": 0.05,
+            "noncompliant": 0.29
+          },
+          "confidence": 0.51
+        },
+        "pickup_dispatch_compliance": {
+          "type": "choice",
+          "choice": "compliant",
+          "probabilities": {
+            "partial": 0.15,
+            "not_applicable": 0.03,
+            "compliant": 0.76,
+            "noncompliant": 0.06
+          },
+          "confidence": 0.67
+        },
+        "overall_compliance_severity": {
+          "type": "score",
+          "score": 1.64,
+          "legend": {
+            "0": "No deviation - fully compliant with every currently-applicable instruction (includes lots where most instructions aren't applicable yet)",
+            "1": "Minor deviation - a currently-applicable instruction was followed loosely, or has a small documentation/verifiability gap, but no real risk",
+            "2": "Major deviation - a currently-applicable instruction was clearly not followed, needs review"
+          },
+          "probabilities": {
+            "0": 0.13,
+            "1": 0.1,
+            "2": 0.77
+          },
+          "confidence": 0.46
+        }
+      },
+      "claude_verdict": "**1. escalation_followed:** Unclear/Partial. The seller's Day-2/Day-3 escalation policy (high-charge approvals \u2192 GEICO.SUPPORT@COPART.COM; Day-3 release issues \u2192 same address) is timestamp-based. Timeline: assignment created 09/28 08:51; a \"CHARGES ABOVE SELLER LIMIT. NEED APPROVAL\" release issue opened 09/28 09:15 (Day 1); still open/being worked through 09/29 06:03\u201310:50 (Day 2, ~25 hrs elapsed); resolved and driver dispatched 09/29 14:59 (~30 hrs total). The lot never reaches the 72-hr \"Day 3\" mark, so the Day-3 email-escalation clause is **not yet applicable** \u2014 no violation there. However, the charges did cross into \"Day 2\" while still above the seller limit, and instructions require Day-2 high-charge approvals to route to GEICO.SUPPORT@COPART.COM. No note shows that email being sent \u2014 only an internal cancellation of the release issue (\"CANCELLED - SELLER\") and correspondence with an adjuster (ARAMIREZ@GEICO.COM, seen in a release-issue comment). This may satisfy the spirit of seller sign-off, but it's not clearly the mandated GEICO.SUPPORT@COPART.COM escalation, and can't be confirmed either way from the notes alone.\n\n**2. title_handling:** Consistent, not fully verifiable on the salvage/clean branding rule. Notes show \"SLVG TRANS REC'D\" (TDIR) and \"OTHER TITLE DOC\" selected (SVGT), and the lot was flagged Title-Direct eligible (TDAA) because title didn't come from the seller system \u2014 all standard and non-contradictory. This aligns with \"everything on salvage title unless state requires clean\" (address is TX; no state-clean-title override is indicated). No FL-specific or burn-vehicle scenario appears, so those clauses are not applicable here. Stage appears pre-title-processing (stage ~10-20), so full title workflow (transferable conversion) hasn't been reached yet \u2014 nothing to flag as inconsistent.\n\n**3. communication_compliance:** Compliant. Multiple contact attempts logged (A523/A503 click-to-dial, direct calls with \"Andrea\" at the shop, verified pickup address, keys, towability) with clear documentation of outcomes at each step \u2014 consistent with the assignment/dispatch notes' expectation of active seller/pickup-location contact management.\n\n**4. billing_compliance:** Partial/unverifiable. Two ancillary services (SVCA: \"TOTAL LOSS EXPRESS,\" \"DTLE C360 IMAGING\") were added automatically at intake with no visible supervisor-approval note, though these look like standard total-loss program services rather than the kind of extra/ancillary charges the instruction is likely targeting (e.g., storage overages, extra tow fees). The $4000 charge clearance itself references \"MISCELLANEOUS FEES: TOTAL\" with no itemized breakdown visible in the notes, and no explicit supervisor-email note is present for this above-limit charge \u2014 can't confirm compliance with \"EMAIL SUPERVISOR FOR ADV CHARGE APPROVAL\" from the notes alone. Key-approval $200 threshold is not applicable (no key charge appears, just a keys-available flag).\n\n**5. pickup_dispatch_compliance:** Compliant. Release issues (A544/A545/A546) were properly opened, updated, and closed with documented reasons and resolutions; charges were cleared ($4000, A513/CRGC) before dispatch; driver was dispatched (DSP3) only after CL01/CRGC clearance \u2014 matches expected CFR/dispatch workflow.\n\n**6. overall_compliance_severity:** **Minor.** At the lot's current stage (pre-checkin, pickup/CFR-clearance phase \u2014 stage ~10-15), the only applicable seller instructions are the assignment/dispatch (CFR, advance-charge, Day-2/3 escalation) and billing (ancillary-service/charge approval) clauses; title-notes clauses are only partially applicable (title-direct/salvage branding, already shown as consistent) and Day-3 escalation is not yet applicable (lot resolved within ~30 hrs). The one open question \u2014 whether the $4000 charge crossing the seller's limit into \"Day 2\" was properly escalated to GEICO.SUPPORT@COPART.COM or supervisor as required \u2014 is not confirmed by any note, which is a minor, not major, gap since the charge was ultimately resolved appropriately (seller-side cancellation/approval, successful pickup clearance) and no contradicting or unresolved blocker remains. No timestamps or dollar-threshold definitions were provided to confirm whether $4000 actually qualifies as a \"high charge\" under this seller's specific dollar rule, which limits full verification.",
+      "bucket": "sharp_disagreement",
+      "bucket_reason": "Most dimension-level conclusions align, but Jev's probabilities strongly favor a major/serious overall severity (77% on score 2) while Claude explicitly concludes the overall deviation is only minor, creating a meaningful conflict in the top-line verdict.",
+      "dimension_buckets": {
+        "escalation_followed": "minor_deviation",
+        "title_handling": "aligned",
+        "communication_compliance": "aligned",
+        "billing_compliance": "aligned",
+        "pickup_dispatch_compliance": "aligned",
+        "overall_compliance_severity": "sharp_disagreement"
+      }
+    },
+    {
+      "seller_code": "SZ94",
+      "seller_name": "STATE FARM INSURANCE",
+      "lot_number": "70430216",
+      "lot_stage": "15",
+      "lot_status": "WAITING TO CLEAR CHARGES",
+      "jev_answers": {
+        "escalation_followed": {
+          "type": "noul",
+          "noul": 0.67
+        },
+        "title_handling": {
+          "type": "choice",
+          "choice": "consistent",
+          "probabilities": {
+            "not_applicable": 0.43,
+            "inconsistent": 0.01,
+            "consistent": 0.56
+          },
+          "confidence": 0.34
+        },
+        "communication_compliance": {
+          "type": "choice",
+          "choice": "compliant",
+          "probabilities": {
+            "partial": 0.35,
+            "compliant": 0.47,
+            "noncompliant": 0.18
+          },
+          "confidence": 0.2
+        },
+        "billing_compliance": {
+          "type": "choice",
+          "choice": "partial",
+          "probabilities": {
+            "partial": 0.78,
+            "not_applicable": 0.01,
+            "compliant": 0.05,
+            "noncompliant": 0.16
+          },
+          "confidence": 0.7
+        },
+        "pickup_dispatch_compliance": {
+          "type": "choice",
+          "choice": "partial",
+          "probabilities": {
+            "partial": 0.56,
+            "not_applicable": 0.01,
+            "compliant": 0.05,
+            "noncompliant": 0.38
+          },
+          "confidence": 0.41
+        },
+        "overall_compliance_severity": {
+          "type": "score",
+          "score": 1.36,
+          "legend": {
+            "0": "No deviation - fully compliant with every currently-applicable instruction (includes lots where most instructions aren't applicable yet)",
+            "1": "Minor deviation - a currently-applicable instruction was followed loosely, or has a small documentation/verifiability gap, but no real risk",
+            "2": "Major deviation - a currently-applicable instruction was clearly not followed, needs review"
+          },
+          "probabilities": {
+            "0": 0.24,
+            "1": 0.16,
+            "2": 0.6
+          },
+          "confidence": 0.04
+        }
+      },
+      "claude_verdict": "**1. Escalation_followed:** Not applicable / unclear. State Farm's standing instructions do not contain a day-based escalation clause (unlike GEICO's \"Day 2/Day 3\" language) \u2014 the only threshold instruction is the \"3 quotes for non-std tows\" rule. No note in the history explicitly classifies this tow as \"non-standard\" or references quote-gathering, so there's nothing to escalate against. Cannot verify because the instruction's trigger condition (non-std tow) is never flagged either way.\n\n**2. Title_handling:** Consistent, but only partially reached in lifecycle. The `TDAA` note (09-23 07:06:37) confirms \"LOT IS ELIGIBLE FOR TITLE DIRECT BECAUSE TITLE DID NOT COME FROM SELLER\" \u2014 this matches the mandatory \"ALL LOTS TO BE PROCESSED TITLE DIRECT\" instruction. The vehicle/pickup is in GA (Ringgold, GA / Fort Oglethorpe, GA), so the \"do not process out-of-state titles as GA cancellations\" clause is not triggered \u2014 no evidence of an out-of-state title conflict. The lot has not yet reached stage 40 (title processing) in these notes, so full title-doc handling (BOS/mail-to-Tempe) can't yet be verified.\n\n**3. Communication_compliance:** Compliant. Multiple attempts to contact the pickup location (A503/A523/CLLR) are logged, including failed attempts (no answer) correctly generating release issues (A544/A545/A546), a seller portal callback response (\"PLEASE CALL BACK\" 09-23 09:43), and follow-up calls resulting in successful contact (Erick/Briland) with verified address and charge breakdown read back verbatim. Communication with State Farm's salvage monitor (Jason Bagwell) was also attempted, and correctly declined since the dry-run request didn't meet his stated parameters \u2014 showing awareness of seller-specific procedure.\n\n**4. Billing_compliance:** Compliant, with one gap that's unverifiable. Advance charges were itemized line-by-line (tow $950, labor $250, gate $150, storage $750, etc.) before clearance, consistent with the \"advance charge detail breakdown\" requirement. The over-limit approval ($2100 vs $1500 limit) was routed through `ACLO`/B2B approval, and a GM was explicitly consulted for a dry-run charge (\"PER DISCUSSION IN OFFICE GM APPROVED DRY RUN,\" 09-25 11:02), matching \"SEE GENERAL MANAGER FOR ADVANCE CHARGE DETAIL BREAKDOWN INSTRUCTIONS.\" No mail-item work orders appear in these notes, so the \"adjuster must approve mail items\" clause is not applicable yet. The \"3 quotes for non-std tows\" rule is not verifiable \u2014 the notes never label this a non-standard tow, so it's unclear whether that rule should have applied.\n\n**5. Pickup_dispatch_compliance:** Compliant given the stage. Release issues were opened and closed appropriately (missing info \u2192 resolved; charges approval \u2192 resolved), a driver was dispatched (`DSP3`), then removed (`RMDR`) and the lot uncleared (`UNCL`) when the shop refused Copart's payment method \u2014 handled transparently with a seller email notification (09-25 10:35) and correct escalation to GM for a resolution (dry run). The lot was subsequently re-cleared (`CL01`, 09-28 08:53) and charge-clearance cycles continue through 09-29, which is normal mid-process activity, not a violation, since the lot is still pre-pickup.\n\n**6. Overall_compliance_severity: No deviation.**\nEvery standing instruction that is currently applicable at this lot's stage (pre-pickup/awaiting-clearance, roughly stage 10\u201315) \u2014 Title Direct eligibility, GM-based advance charge review, communication with pickup location/seller \u2014 is evidenced as followed in the notes. The only instruction whose applicability can't be confirmed (3-quotes/Monitor Inc Transit Pros for non-std tows) has no note indicating the tow was ever classified as non-standard, so it cannot be counted as a violation \u2014 it is either not yet applicable or not triggered by this lot's tow type. No contradicting or unresolved note remains open past a point where it should have been resolved (the 09-25 UNCL was promptly re-addressed and re-cleared by 09-28). Overall: no deviation from currently applicable instructions, with explicit caveats noted above where verification is limited by the note content.",
+      "bucket": "sharp_disagreement",
+      "bucket_reason": "While several dimensions align, Jev's dominant probabilities point toward partial/noncompliant pickup dispatch and a major overall deviation, whereas Claude concludes compliant pickup handling and 'no deviation' overall\u2014directly conflicting verdicts.",
+      "dimension_buckets": {
+        "escalation_followed": "aligned",
+        "title_handling": "aligned",
+        "communication_compliance": "aligned",
+        "billing_compliance": "minor_deviation",
+        "pickup_dispatch_compliance": "sharp_disagreement",
+        "overall_compliance_severity": "sharp_disagreement"
+      }
+    },
+    {
+      "seller_code": "S841",
+      "seller_name": "STATE FARM - ILLINOIS",
+      "lot_number": "70280716",
+      "lot_stage": "20",
+      "lot_status": "AWAITING DISPATCH",
+      "jev_answers": {
+        "pickup_dispatch_compliance": {
+          "type": "choice",
+          "choice": "partial",
+          "probabilities": {
+            "compliant": 0.19,
+            "noncompliant": 0.26,
+            "partial": 0.5,
+            "not_applicable": 0.05
+          },
+          "confidence": 0.34
+        },
+        "overall_compliance_severity": {
+          "type": "score",
+          "score": 0.89,
+          "legend": {
+            "0": "No deviation - fully compliant with every currently-applicable instruction (includes lots where most instructions aren't applicable yet)",
+            "1": "Minor deviation - a currently-applicable instruction was followed loosely, or has a small documentation/verifiability gap, but no real risk",
+            "2": "Major deviation - a currently-applicable instruction was clearly not followed, needs review"
+          },
+          "probabilities": {
+            "0": 0.45999999999999996,
+            "1": 0.18,
+            "2": 0.36
+          },
+          "confidence": 0
+        },
+        "escalation_followed": {
+          "type": "noul",
+          "noul": 0.5
+        },
+        "title_handling": {
+          "type": "choice",
+          "choice": "consistent",
+          "probabilities": {
+            "inconsistent": 0.17,
+            "consistent": 0.81,
+            "not_applicable": 0.02
+          },
+          "confidence": 0.71
+        },
+        "communication_compliance": {
+          "type": "choice",
+          "choice": "compliant",
+          "probabilities": {
+            "compliant": 0.6,
+            "noncompliant": 0.16,
+            "partial": 0.24
+          },
+          "confidence": 0.4
+        },
+        "billing_compliance": {
+          "type": "choice",
+          "choice": "partial",
+          "probabilities": {
+            "compliant": 0.05,
+            "noncompliant": 0.22,
+            "partial": 0.63,
+            "not_applicable": 0.1
+          },
+          "confidence": 0.5
+        }
+      },
+      "claude_verdict": "**1. Escalation_followed:** Not applicable / unclear \u2014 this seller's instructions (assignment/dispatch notes) contain only the \"3 quotes + Monitor Inc Transit Pros\" rule for non-standard tows, not a day-count escalation clause (unlike GEICO's Day2/Day3 pattern). No day-based escalation threshold exists in these standing instructions to check against.\n\n**2. Title_handling: Consistent.** Title notes mandate \"ALL LOTS TO BE PROCESSED TITLE DIRECT,\" and the lot notes show `TDAA` (eligible for Title Direct, \"title did not come from seller\") at 09:43:09, followed by repeated `TDIR` salvage-transmittal actions and title-doc uploads (`TPRN`) through 09/25. A branding discrepancy was opened (\"Unknown Branding Received\") on 9/23 14:12 and resolved 9/25 08:44 once \"SALVAGE TITLE DOC\" was properly selected \u2014 consistent with the Title Direct program working as intended. No out-of-state title / GA cancellation issue appears in the notes, so that specific instruction is not triggered either way. No physical title mailing to the Tempe, AZ address is referenced, which is expected since the lot is on Title Direct (bypasses the physical-title requirement) \u2014 not a violation.\n\n**3. Communication_compliance: Compliant.** The notes show a thorough, repeated contact effort consistent with the release-issue (CFR) workflow: multiple `A503`/`A523` click-to-dial attempts, `A544/A545/A546` release issues opened/updated/closed for \"info required from pickup location,\" \"owner release required,\" \"no answer,\" etc., spanning 9/22\u20139/29. Communications document who was contacted (Aaron, Gerber Collision, adjuster Jenny Miller) and outcomes at each step, matching the expected pattern for resolving pickup blockers before clearance.\n\n**4. Billing_compliance: Partial (not fully verifiable).** The seller requires GM breakdown detail on advance charges and adjuster approval for mail-item work orders, with monitors (not adjusters) recommending \"enhancements.\" The notes show XML-fed charge notes ($200/4hrs mechanical time, discounted to 2hrs) and a final $200 labor charge cleared at 09/29 13:26:02 with a plain description (\"PER AARON NOT TOWABLE HAS KEY 200 LABOR CHARGES\"). There's no visible note confirming GM sign-off or adjuster approval specifically, but nothing in the notes contradicts the instruction either \u2014 this may simply not have been transcribed. Cannot confirm full compliance from notes alone; no direct evidence of a violation.\n\n**5. Pickup_dispatch_compliance: Compliant (for what's applicable).** No non-standard tow appears in this lot's history (pickup location is a body shop/\"Program Shop,\" and the eventual clearance notes \"NOT TOWABLE\" \u2014 i.e., a standard drive/release scenario), so the 3-quotes/Monitor Inc approval requirement was never triggered \u2014 not applicable rather than violated. The pickup-hold/release-issue handling itself (holds, PUNC codes, eventual CL01/CRGC clearance on 9/29) is orderly and resolved.\n\n**6. Overall_compliance_severity: No deviation.** Every standing instruction that is currently applicable at this lot's stage (title-direct mandate, communication/release-issue handling) is followed in the notes. The non-standard-tow quote rule was never triggered (no non-standard tow occurred), and the day-based escalation clause doesn't exist for this seller. Billing GM-breakdown approval can't be independently verified from the notes, but there is no note contradicting it, so it is not counted as a deviation.",
+      "bucket": "minor_deviation",
+      "bucket_reason": "Most dimensions align closely, but Jev and Claude diverge on pickup/dispatch compliance, which slightly pulls down overall agreement.",
+      "dimension_buckets": {
+        "escalation_followed": "aligned",
+        "title_handling": "aligned",
+        "communication_compliance": "aligned",
+        "billing_compliance": "aligned",
+        "pickup_dispatch_compliance": "sharp_disagreement",
+        "overall_compliance_severity": "aligned"
+      }
+    },
+    {
+      "seller_code": "S859",
+      "seller_name": "STATE FARM INSURANCE",
+      "lot_number": "70664196",
+      "lot_stage": "25",
+      "lot_status": "AWAITING ADVANCE CHECK",
+      "jev_answers": {
+        "escalation_followed": {
+          "type": "noul",
+          "noul": 0.46
+        },
+        "title_handling": {
+          "type": "choice",
+          "choice": "consistent",
+          "probabilities": {
+            "not_applicable": 0.43,
+            "consistent": 0.5599999999999999,
+            "inconsistent": 0.01
+          },
+          "confidence": 0.35
+        },
+        "communication_compliance": {
+          "type": "choice",
+          "choice": "compliant",
+          "probabilities": {
+            "compliant": 0.6799999999999999,
+            "partial": 0.2,
+            "noncompliant": 0.12
+          },
+          "confidence": 0.53
+        },
+        "billing_compliance": {
+          "type": "choice",
+          "choice": "partial",
+          "probabilities": {
+            "compliant": 0.14,
+            "partial": 0.75,
+            "noncompliant": 0.1,
+            "not_applicable": 0.01
+          },
+          "confidence": 0.66
+        },
+        "pickup_dispatch_compliance": {
+          "type": "choice",
+          "choice": "partial",
+          "probabilities": {
+            "compliant": 0.13,
+            "partial": 0.58,
+            "noncompliant": 0.27,
+            "not_applicable": 0.02
+          },
+          "confidence": 0.45
+        },
+        "overall_compliance_severity": {
+          "type": "score",
+          "score": 0.95,
+          "legend": {
+            "0": "No deviation - fully compliant with every currently-applicable instruction (includes lots where most instructions aren't applicable yet)",
+            "1": "Minor deviation - a currently-applicable instruction was followed loosely, or has a small documentation/verifiability gap, but no real risk",
+            "2": "Major deviation - a currently-applicable instruction was clearly not followed, needs review"
+          },
+          "probabilities": {
+            "0": 0.42,
+            "1": 0.2,
+            "2": 0.38
+          },
+          "confidence": 0
+        }
+      },
+      "claude_verdict": "**1. Escalation followed:** Unclear/not applicable \u2014 this seller's assignment/dispatch notes contain no day-based escalation threshold (unlike the GEICO \"Day 2/Day 3\" pattern); the only escalation-like language is the 3-quotes-for-non-standard-tow rule, discussed below. No timestamps in the notes point to an unaddressed escalation trigger.\n\n**2. Title handling:** Not yet fully applicable, but on-track. The lot is still at the pickup/dispatch stage (driver just dispatched 2026-09-29 13:59:51, DSP3) \u2014 it has not reached stage ~40 title processing where the \"ALL LOTS TO BE PROCESSED THROUGH TITLE DIRECT\" mandate is acted on. However, the system already auto-flagged the lot `TDAA` \"ELIGIBLE FOR TITLE DIRECT BECAUSE TITLE DID NOT COME FROM SELLER\" at 2026-09-24 09:53:35, which is directionally consistent with the seller's Title Direct mandate. No contradicting title note (e.g., a Title Standard flag) appears.\n\n**3. Communication compliance:** Compliant. Multiple, well-documented contact attempts to the pickup location (A503/A523 click-to-dials at 10:00, 10:28, 12:19, 13:31:55, 13:55), release issues opened/updated/closed transparently (A544/A545/A546 chain from 10:01:40 through 13:38:28), and eventual successful contact (\"SPOKE WITH JOHN AT THE SHOP... VEHICLE IS RELEASED\" at 13:40:36). No unresolved contact blocker remains open.\n\n**4. Billing compliance:** Compliant, so far as verifiable. Instructions require GM breakdown guidance and adjuster/mail-item approval for advance charges. The notes show a full itemized charge breakdown (tow, labor, gate, storage x2, tax) at both 09-29 09:25:48 and 13:34:05, and advance-charge-over-limit amounts were explicitly approved before clearing \u2014 first \"APPROVED BY STATEFARM VIA LOT NOTES\" (A299 09:22:16, ACLO 09:25:44) then corrected/re-approved \"BY SELLER B2B VIA SELLER ACCESS\" (ACLO 13:34:03) after an uncleared/re-cleared correction cycle. This matches the adjuster-approval intent; no evidence of charges cleared without approval. GM involvement itself can't be directly confirmed from notes (no GM-specific note), so this is \"compliant as far as visible,\" not fully verifiable end-to-end. No mail-item work orders appear, so that clause isn't triggered.\n\n**5. Pickup/dispatch compliance:** Compliant. The 3-quotes/Monitor Inc Transit Pros rule applies to *non-standard tows*; nothing in the notes indicates a non-standard tow occurred (vehicle sat at a \"Tow/Impound Yard\" per pickup location XML, i.e., a standard retrieval), so this clause is not triggered/not applicable rather than violated. Standard pickup clearance workflow (A501/CL01/CPKY/CRGC/DSP3) was followed correctly, ending in driver dispatch on 09-29 13:59:51 for 09/30/2026 pickup.\n\n**6. Overall compliance severity: No deviation.** Counting only currently-applicable instructions (communication/contact handling, advance-charge approval-before-clearance, and the directional Title Direct flag), all were satisfied per the note trail. The non-std-tow quote rule and full title-processing/mail-address instructions are not yet triggered/applicable at this lot's current (pre-checked-in, pickup-dispatch) stage, so they don't count against severity.",
+      "bucket": "sharp_disagreement",
+      "bucket_reason": "While escalation and communication align, Jev's dominant 'partial' probabilities for billing and pickup/dispatch conflict sharply with Claude's unambiguous 'compliant' conclusions on those same dimensions.",
+      "dimension_buckets": {
+        "escalation_followed": "aligned",
+        "title_handling": "aligned",
+        "communication_compliance": "aligned",
+        "billing_compliance": "sharp_disagreement",
+        "pickup_dispatch_compliance": "sharp_disagreement",
+        "overall_compliance_severity": "minor_deviation"
+      }
+    },
+    {
+      "seller_code": "U004",
+      "seller_name": "USAA",
+      "lot_number": "70867816",
+      "lot_stage": "20",
+      "lot_status": "AWAITING DISPATCH",
+      "jev_answers": {
+        "escalation_followed": {
+          "type": "noul",
+          "noul": 0.62
+        },
+        "title_handling": {
+          "type": "choice",
+          "choice": "consistent",
+          "probabilities": {
+            "not_applicable": 0.29,
+            "inconsistent": 0.25,
+            "consistent": 0.46
+          },
+          "confidence": 0.18
+        },
+        "communication_compliance": {
+          "type": "choice",
+          "choice": "compliant",
+          "probabilities": {
+            "partial": 0.05,
+            "compliant": 0.94,
+            "noncompliant": 0.01
+          },
+          "confidence": 0.91
+        },
+        "billing_compliance": {
+          "type": "choice",
+          "choice": "compliant",
+          "probabilities": {
+            "partial": 0.19,
+            "not_applicable": 0.01,
+            "compliant": 0.79,
+            "noncompliant": 0.01
+          },
+          "confidence": 0.71
+        },
+        "pickup_dispatch_compliance": {
+          "type": "choice",
+          "choice": "compliant",
+          "probabilities": {
+            "partial": 0.09,
+            "not_applicable": 0.01,
+            "compliant": 0.88,
+            "noncompliant": 0.02
+          },
+          "confidence": 0.84
+        },
+        "overall_compliance_severity": {
+          "type": "score",
+          "score": 0.72,
+          "legend": {
+            "0": "No deviation - fully compliant with every currently-applicable instruction (includes lots where most instructions aren't applicable yet)",
+            "1": "Minor deviation - a currently-applicable instruction was followed loosely, or has a small documentation/verifiability gap, but no real risk",
+            "2": "Major deviation - a currently-applicable instruction was clearly not followed, needs review"
+          },
+          "probabilities": {
+            "0": 0.44,
+            "1": 0.39,
+            "2": 0.17
+          },
+          "confidence": 0
+        }
+      },
+      "claude_verdict": "**1. Escalation followed:** Not applicable / unclear \u2014 this seller's instructions contain no Day-2/Day-3 escalation language (unlike GEICO-style sellers), so there is no escalation policy to check against. The multiple PUNC/A544 release-issue cycles (9/25\u20139/29) show persistent follow-up attempts, but no violation can be assessed for a rule that doesn't exist in these instructions.\n\n**2. Title handling:** Not yet applicable \u2014 the lot is still pre-pickup (never reached stage 30 check-in or stage 40 title processing). Only note is `TDAB` (09/25 12:36) flagging the lot as **not eligible for Title Direct** because title comes from the seller, meaning it's on the Title Standard path. None of the seller's conditional title_notes (FL flood=CD, URT theft, salvage-auto-approval logic) have been triggered yet \u2014 no title-branding or state-specific issue appears in the notes at all, consistent with the lot not yet being at that stage.\n\n**3. Communication compliance:** Compliant. Assignment/dispatch notes permit calling the owner directly and require following the USAA procedural guide. The notes show extensive documented outreach: click-to-dial attempts to pickup location and adjuster (A503, multiple 9/25\u20139/29), a text message sent directly to the owner's number under CB14 (09/28 14:29:46) explicitly on Copart's behalf to USAA, and adjuster contact (\"Amber\") confirmed multiple times. This matches the \"OK to call owner\" / \"follow procedural guide\" instructions.\n\n**4. Billing compliance:** Compliant. `biln_notes` require advance charges \"broken down completely.\" The 09/29 13:08:37 CRGC note itemizes Tow ($244), Storage ($2000, dates 9/22\u20139/29 at $250/day), Estimated Fees/teardown ($256), Tax ($0), Total ($2500) \u2014 fully broken down by category as required. Total charges ($2500) fall under the $5,000 preapproval threshold stated in assgn_notes/dspch_notes, consistent with charges being cleared without escalation beyond normal CE negotiation (the DOVL \"over limit\" was resolved via CE negotiation down to $2500, then cleared). No key-approval issue arose (CPKY = keys available yes; no charge for key-making appears, so the \"no key approval needed\" clause was not triggered).\n\n**5. Pickup/dispatch compliance:** Compliant. Dispatch notes require reviewing seller notes and following USAA procedures with permission to call the owner. The notes show a thorough, well-documented pickup-clearance workflow: initial \"unable to contact\" issue opened/closed, \"vehicle not at pickup location\" issue resolved after locating the correct shop (Perfect Ion Autobody) via adjuster/shop contact on 09/29 09:45, followed by charges-approval issue opened and closed same day, ending in `CL01`/`CRGC` clearance for pickup at $2500 on 09/29 13:08:37. This reflects normal, compliant multi-day pickup-clearance handling, not a violation.\n\n**6. Overall compliance severity: No deviation.** All instructions currently applicable at this lot's stage (pre-pickup, charges-clearance phase) \u2014 dollar-threshold preapproval, owner-contact permission, itemized billing breakdown \u2014 were followed and documented. Title-specific instructions are not yet applicable since the lot hasn't reached title processing. No escalation-timing rule exists in this seller's instructions to violate. No unresolved or contradicting notes remain open past the point where the corresponding instruction became relevant.",
+      "bucket": "minor_deviation",
+      "bucket_reason": "Most dimensions align closely (compliant/no-deviation), but title_handling shows a soft mismatch between Jev's weak 'consistent' lean and Claude's firm 'not applicable' stance.",
+      "dimension_buckets": {
+        "escalation_followed": "aligned",
+        "title_handling": "minor_deviation",
+        "communication_compliance": "aligned",
+        "billing_compliance": "aligned",
+        "pickup_dispatch_compliance": "aligned",
+        "overall_compliance_severity": "aligned"
+      }
+    },
+    {
+      "seller_code": "U004",
+      "seller_name": "USAA",
+      "lot_number": "39134344",
+      "lot_stage": "40",
+      "lot_status": "TITLE ONLY-WAITING TITLE/DMV",
+      "jev_answers": {
+        "escalation_followed": {
+          "type": "noul",
+          "noul": 0.71
+        },
+        "title_handling": {
+          "type": "choice",
+          "choice": "consistent",
+          "probabilities": {
+            "inconsistent": 0.09,
+            "consistent": 0.62,
+            "not_applicable": 0.29
+          },
+          "confidence": 0.43
+        },
+        "communication_compliance": {
+          "type": "choice",
+          "choice": "compliant",
+          "probabilities": {
+            "partial": 0.42,
+            "compliant": 0.51,
+            "noncompliant": 0.07
+          },
+          "confidence": 0.27
+        },
+        "billing_compliance": {
+          "type": "choice",
+          "choice": "not_applicable",
+          "probabilities": {
+            "partial": 0.25,
+            "compliant": 0.22,
+            "not_applicable": 0.44,
+            "noncompliant": 0.09
+          },
+          "confidence": 0.25
+        },
+        "pickup_dispatch_compliance": {
+          "type": "choice",
+          "choice": "compliant",
+          "probabilities": {
+            "partial": 0.16,
+            "compliant": 0.75,
+            "not_applicable": 0.01,
+            "noncompliant": 0.08
+          },
+          "confidence": 0.67
+        },
+        "overall_compliance_severity": {
+          "type": "score",
+          "score": 1.32,
+          "legend": {
+            "0": "No deviation - fully compliant with every currently-applicable instruction (includes lots where most instructions aren't applicable yet)",
+            "1": "Minor deviation - a currently-applicable instruction was followed loosely, or has a small documentation/verifiability gap, but no real risk",
+            "2": "Major deviation - a currently-applicable instruction was clearly not followed, needs review"
+          },
+          "probabilities": {
+            "0": 0.24,
+            "1": 0.2,
+            "2": 0.56
+          },
+          "confidence": 0
+        }
+      },
+      "claude_verdict": "**1. Escalation followed:** Unclear/Not applicable \u2014 USAA's standing instructions (unlike GEICO's Day2/Day3 language) contain no explicit day-count escalation trigger; they only reference \"follow USAA procedural guide 12-9-24\" for release handling, whose content isn't visible in the notes. The lot shows daily follow-up attempts (1/17, 18, 19, 22, 23, 24) with FOLLOWUP DUE comments logged each day, which is consistent with a diligent cadence, but there's no seller-defined threshold to verify compliance against.\n\n**2. Title handling:** Not applicable / consistent so far \u2014 The vehicle was never picked up; it ended in an \"OWNER RETAINING THE VEHICLE\" release issue (1/22) and the assignment was switched from Standard to Title Only (1/24, TSSW). None of the seller's conditional title triggers (FL flood, bonded title, URT theft, no-state-guideline salvage) are referenced or relevant in this lot's notes \u2014 vehicle condition/state aren't flagged as any of those categories. No inconsistency found, but full title processing (stage ~40) never occurs here since ownership was retained, so most title_notes conditions are moot for this lot.\n\n**3. Communication compliance:** Compliant \u2014 \"OK TO CALL OWNER\" was exercised extensively and appropriately (direct calls/texts to Jonas Bourland on 1/17\u20131/18). When the owner explicitly stated at 1/18 11:27:58 \"PLEASE CONTACT THE SELLER, DO NOT CONTACT THE OWNER,\" all subsequent contact activity (1/19, 1/22\u20131/24) correctly shifted to the pickup location/shop and the seller/adjuster \u2014 no further owner calls appear after that point. One earlier call attempt at 1/18 08:14 arguably preceded the \"wait for Joyce to speak with Jonas\" note from 1/17 23:25, but since \"OK to call owner\" is itself the seller's standing instruction (the Joyce request was an ad hoc customer preference, not a seller-code instruction), this is not a standing-instruction violation.\n\n**4. Billing compliance:** Compliant (with a verification caveat) \u2014 No advance charges appear (vehicle was never towed in; owner retained it at the shop). The only billed items, SLRB \"TITLE PROC NO LIENHOLDER\" and \"TITLE PROC - MVR,\" are itemized as separate line entries, consistent with the \"must be broken down completely\" instruction. No dollar figures are visible in the notes to confirm the $5,000 preapproval threshold was respected, so full CAS-level breakdown/threshold compliance can't be independently verified from this text alone \u2014 but nothing in the notes contradicts the instruction.\n\n**5. Pickup/dispatch compliance:** Compliant \u2014 Dispatch notes require reviewing all USAA notes, calling the owner, and following USAA procedures for release; the notes show correct use of structured release-issue codes (A544 SLOCN \"seller/owner contact needed,\" then A544 OWREV \"owner retaining the vehicle\"), consistent PUNC/CB14 documentation, and repeated, well-documented contact attempts to both owner and pickup location before each release-issue update. No indication the required call-first workflow was skipped.\n\n**6. Overall compliance severity:** No deviation \u2014 At this lot's current stage (pre-pickup/release-issue resolution, never reaching stage 30 check-in), all currently-applicable instructions (call permissions, itemized billing, structured release-issue handling) appear to have been followed. Title-specific conditional instructions (FL flood, bonded title, URT theft, salvage default) are not yet/never applicable given the owner-retain outcome, and the single early owner-call timing question is not a violation of the seller's actual standing instructions. No unresolved contradiction is evident in the visible notes.",
+      "bucket": "sharp_disagreement",
+      "bucket_reason": "Jev's severity score leans toward a major deviation (56% probability) while Claude concludes no deviation, and Jev's billing verdict tilts toward not_applicable while Claude asserts compliance, producing meaningful cross-engine conflicts despite agreement on the other dimensions.",
+      "dimension_buckets": {
+        "escalation_followed": "aligned",
+        "title_handling": "aligned",
+        "communication_compliance": "aligned",
+        "billing_compliance": "sharp_disagreement",
+        "pickup_dispatch_compliance": "aligned",
+        "overall_compliance_severity": "sharp_disagreement"
+      }
+    }
+  ]
+}

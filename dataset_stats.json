@@ -1,0 +1,71 @@
+{
+  "seller_code_count": 6,
+  "total_lots": 95,
+  "lots_per_seller": {
+    "GFLD": {
+      "slr_comp_cd": "GEI",
+      "slr_nm": "GEICO - HOME OFFICE",
+      "lot_count": 16
+    },
+    "GVIC": {
+      "slr_comp_cd": "GEI",
+      "slr_nm": "GEICO - HOME OFFICE",
+      "lot_count": 16
+    },
+    "SZ94": {
+      "slr_comp_cd": "STF",
+      "slr_nm": "STATE FARM INSURANCE",
+      "lot_count": 16
+    },
+    "S841": {
+      "slr_comp_cd": "STF",
+      "slr_nm": "STATE FARM - ILLINOIS",
+      "lot_count": 15
+    },
+    "S859": {
+      "slr_comp_cd": "STF",
+      "slr_nm": "STATE FARM INSURANCE",
+      "lot_count": 16
+    },
+    "U004": {
+      "slr_comp_cd": "USA",
+      "slr_nm": "USAA",
+      "lot_count": 16
+    }
+  },
+  "stage_counts": {
+    "10": 12,
+    "15": 12,
+    "20": 12,
+    "25": 11,
+    "28": 12,
+    "30": 12,
+    "40": 12,
+    "50": 12
+  },
+  "status_counts": {
+    "AWAITING CLEAR FOR PICKUP": 11,
+    "WAITING TO CLEAR CHARGES": 12,
+    "AWAITING DISPATCH": 12,
+    "AWAITING ADVANCE CHECK": 11,
+    "VEHICLE WITH TOW PROVIDER": 6,
+    "AT YARD-AWAITING RECEIVING": 11,
+    "WAITING FOR TRANSFERABLE TITLE": 6,
+    "SELLER HOLD PROGRAM": 8,
+    "READY FOR AUCTION": 4,
+    "AWAITING PICKUP": 5,
+    "PENDING ARRIVAL-NO PICKUP": 1,
+    "Closed": 2,
+    "TITLE ONLY-WAITING TITLE/DMV": 3,
+    "WAITING FOR ORIGINAL TITLE": 1,
+    "INTRANSIT TO YARD 303": 1,
+    "AWAITING TITLE FROM STATE": 1
+  },
+  "source_row_counts": {
+    "instructions_csv_field_rows": 24,
+    "lot_seller_mapping_rows": 95,
+    "raw_note_line_rows": 16066
+  },
+  "skipped_no_instructions": 0,
+  "skipped_no_notes": 0
+}
